@@ -90,7 +90,7 @@ app.use(logger("common"));
 app.use(logger("Logging my own and status = :status"));*/
 app.use(
   logger(
-    "My custom logging :status :method :url :res[content-length] - and it took :response-time ms"
+    "My custom logging status = :status, method = :method, url = :url, content-length = :res[content-length] - and it took time = :response-time ms"
   )
 );
 
